@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochabiz Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Farsan&family=Fascinate+Inline&family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    
+    <div class="header" id="header" data-aos="fade-up">
+        <div class="logo">
+            <h1 class="title" id="purchase-back" onclick="window.location.href='Desert.html'"><i class="fa-solid fa-arrow-left"></i></h1>
+            <a href="notification.html" class="notification"><i class="fa-solid fa-bell"></i></a>
+        </div>
+      </div>
+      <section class="Section-purchase">
+        <div class="title">
+            <h2>Choco Cake</h2>
+            <p class="status">Signature product</p>
+            <div class="picture">
+                <p class="price"><span>$</span>2.99</p>
+                <img src="../image/R.png" alt="" style="width: 220px;right: -10px;">
+            </div>
+        </div>
+        <div class="description">
+            <h3>Particulars</h3>
+            <p class="description-text">Indulge in our rich and moist Choco Cake, crafted with the finest cocoa and topped with a luscious chocolate ganache. Perfect for any occasion, this signature product promises a delightful experience with every bite.</p>
+            <ul class="rating">
+                <li class="rating-item"><i class="fa-solid fa-star"></i></li>
+                <li class="rating-item"><i class="fa-solid fa-star"></i></li>
+                <li class="rating-item"><i class="fa-solid fa-star"></i></li>
+                <li class="rating-item"><i class="fa-solid fa-star"></i></li>
+                <li class="rating-item"><i class="fa-regular fa-star"></i></li>
+            </ul>
+            <div class="level">
+                <div class="size">
+                    <h3>Size<i class="fa-solid fa-cake-candles"></i></h3>
+                    <div class="radio">
+                        <input id="small" type="radio" name="size">
+                        <label for="small">Small</label>
+                        <input id="mediem" type="radio" name="size">
+                        <label for="mediem">Medium</label><br>
+                        <input id="large" type="radio" name="size">
+                        <label for="large">Large</label> <br>
+                    </div>
+                </div>
+            </div>
+            <h2 style="font-size: 28px;">Service</h2>
+            <p class="Service-text">Experience our exceptional service, where customer satisfaction is our top priority. Our dedicated team ensures that every order is handled with care and precision, providing you with a seamless and enjoyable experience.</p>
+            <div class="purchase">
+                <div class="counter">
+                    <button id="decrease">-</button>
+                    <span id="count">1</span>
+                    <button id="increase">+</button>
+                  </div>
+                  <button class="btn-purchase" disabled onclick="window.location.href='card.html'">Purchase</button>
+            </div>
+        </div>
+    </section>
+          <script src="../js/Javascript.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+</body>
+</html>

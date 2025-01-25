@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mochabiz Cafe</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Farsan&family=Fascinate+Inline&family=Irish+Grover&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../style/styles.css">
+    </head>
+<body>
+       
+    <div class="header" id="header" data-aos="fade-up">
+        <div class="logo" onclick="window.location.href='categories.html'"  >
+            <h1 class="title">MOCHABIZ&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></h1>
+            <a href="notification.html" class="notification"><i class="fa-solid fa-bell"></i></a>
+        </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+          </div>
+      </div>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+          <li><a href="">Top Sell</a></li>
+          <li><a href="DrinkTrending.html">Trending</a></li>
+          <li><a href="card.html">Cart</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+         
+        </ul>
+      </div>
+      <nav class="navbar" data-aos="fade-right">
+        <div class="container">
+          <ul class="nav-list">
+           <li class="nav-item"><a href="Food.html" class="navlinked">Shopping Cart</a></li>
+        </div>
+      </nav>
+      <!-- <div class="gotop" onclick="window.location.href='#header'">
+        <i class="fa-solid fa-angle-up"></i>
+      </div> -->
+      <div class="product">
+        <h1 class="title" data-aos="zoom-in">Confirm to Order</h1>
+        <ul class="product-list">
+            <li class="product-item" data-aos="zoom-in"><a href="" class="productlinked">
+                <div class="card">
+                    <div class="image"><img src="../image/465176217_862435995976435_7101058475919849287_n.jpg" alt=""></div>
+                    <div class="info">
+                        <div class="name">
+                            <h3 class="product-name">Green tea <span style="color: #e3cccc;">x1</span></h3>
+                            <p class="product-text">Best selling drinks</p>
+                        </div>
+                        <span class="price">$1.99</span>
+                    </div>
+                </div>
+            </a></li>
+            <li class="product-item" data-aos="zoom-in"><a href="" class="productlinked">
+                <div class="card">
+                    <div class="image"><img src="../image/436281621_738548811698488_1138228655106261123_n.jpg" alt=""></div>
+                    <div class="info">
+                        <div class="name">
+                            <h3 class="product-name">Green tea <span style="color: #e3cccc;">x2</span></h3>
+                            <p class="product-text">Best selling drinks</p>
+                        </div>
+                        <span class="price">$1.99</span>
+                    </div>
+                </div>
+            </a></li>
+        </ul>
+        <div class="zoom">
+            <div class="confirmbtn">
+                <div class="total">
+                    <span>Total:</span>
+                    <span style="font-size: 28px;padding-left: 1rem;">$15</span>
+                </div>
+                <button class="btn-purchase" onclick="window.location.href='payment.html'">Purchase</button>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="../js/Javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

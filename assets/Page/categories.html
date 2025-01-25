@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>categories</title>
+  <link rel="stylesheet" href="../style/categories.css">
+</head>
+<body>
+  <div class="header" data-aos="fade-up">
+    <div class="logo" onclick="window.location.href='categories.html'">
+        <h1 class="title">MOCHABIZ&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></h1>
+        <a href="notification.html" class="notification"><i class="fa-solid fa-bell"></i></a>
+    </div>
+      <div class="search-bar" data-aos="fade-up">
+        <input type="text" placeholder="Search...">
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+      </div>
+  </div>
+  <div class="dropdown-menu" id="dropdownMenu">
+    <ul>
+      <li><a href="DrinkTrending.html">Top Sell</a></li>
+      <li><a href="DrinkTrending.html">Trending</a></li>
+      <li><a href="card.html">Cart</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+     
+    </ul>
+  </div>
+  <nav class="navbar" data-aos="fade-up">
+    <div class="container">
+      <ul class="nav-list">
+       <li class="nav-item"><a href="" class="navlinked">All</a></li>
+           <li class="nav-item"><a href="menu.html" class="navlinked">Drinks &nbsp;&nbsp;<i class="fa-solid fa-mug-hot"></i></a></li>
+           <li class="nav-item"><a href="Food.html" class="navlinked">Food &nbsp;&nbsp;<i class="fa-solid fa-bowl-food"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="slide" data-aos="zoom-in">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../image/461375816_833144325634502_2858304472037274685_n.jpg" alt="">
+          </div>
+          <div class="swiper-slide"><img src="../image/465146780_862923539261014_1536499562728196593_n.jpg" alt="">
+          </div>
+          <div class="swiper-slide"><img src="../image/461778898_841109131442455_5447482100081527233_n.jpg" alt="">
+          </div>
+          <div class="swiper-slide"><img src="../image/430863401_715821723971197_6932669257306624844_n.jpg" alt="">
+          </div>
+          <div class="swiper-slide"><img src="../image/456703283_815735813979787_467498617250802573_n.jpg" alt="">
+          </div>
+          <div class="swiper-slide"><img src="../image/449657386_784715817081787_3422655291088299644_n.jpg" alt="">
+          </div>
+          <div class="swiper-slide"><img src="../image/444487053_767501535469882_3638868383611018817_n.jpg" alt="">
+          </div>
+          <div class="swiper-slide"><img src="../image/438696563_741353668084669_1267066291982200071_n.jpg" alt="">
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+    <div class="Col" data-aos="zoom-in">
+      <div class="card">
+        <a href="menu.html"><img src="../image/465260121_863732365846798_7693182661643634392_n.jpg" alt=""></a>
+        <div class="card-container">
+          <h2 class="cart-content">Drinks</h2>
+        </div>
+      </div>
+      <div class="card">
+        <a href="Food.html">
+          <img src="../image/465853623_866325358920832_6460795703389619464_n.jpg" alt="">
+        </a>
+        <div class="card-container">
+          <h2 class="cart-content">Food</h2>
+        </div>
+      </div>
+      <div class="card">
+        <a href="Desert.html">
+          <img src="../image/467373498_870210168594584_1298485703269978808_n.jpg" alt="">
+        </a>
+        <div class="card-container">
+          <h2 class="cart-content">Dessert</h2>
+        </div>
+      </div>
+      <div class="card">
+        <a href="Discount.html">
+          <img src="../image/465176217_862435995976435_7101058475919849287_n.jpg" alt="">
+        </a>
+        <div class="card-container">
+          <h2 class="cart-content">Discount</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/Javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          speed:1000,
+          loop:true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script> -->
+
+</body>
+</html>

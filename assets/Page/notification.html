@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochabiz Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Farsan&family=Fascinate+Inline&family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    
+    <div class="header" id="header" data-aos="fade-up">
+      <div class="logo" onclick="window.location.href='categories.html'"  >
+            <h1 class="title">MOCHABIZ&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></h1>
+            <a href="notification.html" class="notification"><i class="fa-solid fa-bell"></i></a>
+        </div>
+      </div>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+          <li><a href="">Top Sell</a></li>
+          <li><a href="categories.html">Trending</a></li>
+          <li><a href="card.html">Cart</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+         
+        </ul>
+      </div>
+   
+    <div class="product">
+      <h1 class="title" data-aos="zoom-in">Notification&nbsp;&nbsp;<i class="fa-solid fa-bell"></i></h1>
+      <ul class="product-list">
+        <li class="product-item" data-aos="zoom-in"><a href="" class="productlinked">
+            <div class="card">
+              <div class="image"><img src="../image/405280273_666009182285785_4944754989921417082_n.jpg" alt=""></div>
+              <div class="info">
+                <div class="name">
+                    <h3 class="product-name">Green tea</h3>
+                    <p class="product-text">Your order is completed</p>
+                </div>
+                <span class="price"><i class="fa-solid fa-circle-check"></i></span>
+              </div>
+            </div>
+        </a></li>
+        <li class="product-item" data-aos="zoom-in"><a href="" class="productlinked">
+            <div class="card">
+              <div class="image"><img src="../image/449416835_783070257246343_4559762180523205325_n.jpg" alt=""></div>
+              <div class="info">
+                <div class="name">
+                    <h3 class="product-name">Green tea</h3>
+                    <p class="product-text">Your order is being prepared</p>
+                </div>
+                <span class="price"><i class="fa-solid fa-hourglass-start fa-pulse"></i></span>
+              </div>
+            </div>
+        </a></li>
+        <li class="product-item" data-aos="zoom-in"><a href="" class="productlinked"></a>
+            <div class="card">
+              <div class="image"><img src="../image/463534500_851983093688392_4119219778823354259_n.jpg" alt=""></div>
+              <div class="info">
+                <div class="name">
+                    <h3 class="product-name">Green tea</h3>
+                    <p class="product-text">Your order is being prepared</p>
+                </div>
+                <span class="price"><i class="fa-solid fa-hourglass-start fa-pulse"></i></span>
+              </div>
+            </div>
+        </a></li>
+        <li class="product-item" data-aos="zoom-in"><a href="" class="productlinked">
+            <div class="card">
+              <div class="image"><img src="../image/437595297_738548845031818_5066125197553365040_n.jpg" alt=""></div>
+              <div class="info">
+                <div class="name">
+                    <h3 class="product-name">Green tea</h3>
+                    <p class="product-text">Your order is being prepared</p>
+                </div>
+                <span class="price"><i class="fa-solid fa-hourglass-start fa-pulse"></i></span>
+              </div>
+            </div>
+        </a></li>
+      </ul>
+    </div>
+          <script src="../js/Javascript.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+                  spaceBetween: 0,
+                  centeredSlides: true,
+                  speed:1000,
+                  loop:true,
+                  autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  },
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                });
+          </script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+</body>
+</html>
